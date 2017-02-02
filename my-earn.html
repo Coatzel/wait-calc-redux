@@ -1,0 +1,19 @@
+
+<table id="my-earn" >
+  <th>My Earnings Info</th>
+<tr>
+  <td ng-model="vm.tiptotal" >Tip Total:{{vm.tiptotal | currency}}</td>
+
+
+  </tr>
+  <tr>
+      <td ng-model="vm.count">Meal Count:{{vm.count}} </td>
+  </tr>
+  <tr>
+      <td ng-model="vm.atpm"  > Average Tip Per Meal:{{vm.atpm | currency}}</td>
+  </tr>
+  <tr>
+      <td> <button ng-click="earnReset()">Reset</button>
+</td>
+  </tr>
+</table>

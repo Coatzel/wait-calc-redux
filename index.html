@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Wait Calc</title>
+  <link href="style.css" rel="stylesheet" />
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="myApp.js" type="text/javascript"></script>
+
+</head>
+<body  ng-class="{loading: isLoading}" style="text-align:center">
+
+  <h1> Welcome to the Solid State Diner. Enjoy your stay. //
+  欢迎来到固态餐馆。入住愉快。 </h1>
+
+<div ng-view></div>
+
+
+<ul class="menu">
+
+  <li><a href="#!/">Home</a></li>
+  <li><a ng-href="#!/new-meal.html">New Meal</a></li>
+  <li><a ng-href="#!/my-earn.html">My earn</a></li>
+<li> <img id="saturn" src="image/saturn.gif" style="width:50%"></li>
+</ul>
+
+
+
+
+
+
+</body>
+
+</html>

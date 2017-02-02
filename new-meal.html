@@ -1,0 +1,42 @@
+
+
+<table class="meal-deets">
+  <img src="image/burger.gif" style="width:20%">
+
+<form name="deets"  >
+<th>Enter the Meal Details</th>
+<tr>
+<td>Base Meal Price:{{vm.meal | currency}}<input type="number" ng-model="vm.meal" placeholder="0.00" ></td>
+</tr>
+<tr>
+<td>Tax Rate:{{vm.tax | number:0}}%<input type="number" ng-model="vm.tax" placeholder="4%"></td>
+</tr>
+<tr>
+<td>Tip Percentage:{{vm.tippercent | number:0}}%<input type="number" ng-model="vm.tippercent"placeholder="20%"></td>
+</tr>
+<tr>
+<td><input type="submit" ng-click="vm.addTotal()"></td>
+</tr>
+
+</form>
+
+
+
+<table class="meal-deets">
+  <th>Customer charges</th>
+
+
+
+  <tr>
+
+<td ng-model="vm.subtotal"> Subtotal:{{vm.subtotal | currency}} </td>
+</tr>
+<tr>
+<td ng-model="vm.tip">Tip: {{vm.tip | currency }}</td>
+</tr>
+<tr>
+  <td ng-model="vm.total">Total {{vm.total| currency}}</td>
+  </tr>
+
+</table>
+<img src="image/burgerdeath.gif" style="width:20%">
